@@ -1,6 +1,5 @@
-// Handle subscription form submission
-document.querySelector('.subscription-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Perform the subscription logic
+// Example of handling the subscription form
+document.getElementById('subscription-form').addEventListener('submit', function(event) {
+    event.preventDefault();
     alert('Thank you for subscribing!');
 });
