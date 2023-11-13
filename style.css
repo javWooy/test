@@ -1,62 +1,65 @@
-/* General styles and variables */
+/* Importing a Google Font for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 :root {
-    --main-bg-color: #f0f4f8;
-    --main-text-color: #333;
-    --wooy-green: #00bfa5;
+    --main-color: #00bfa5;
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-color: #f4f4f4;
+    --hero-bg-color: #e8f7f4;
+    --section-padding: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    color: var(--text-dark);
 }
 
-/* Header styles would go here */
+header {
+    background: var(--main-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+}
 
-/* Hero section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav .logo .oy-part {
+    color: var(--text-light);
+}
+
 .hero {
+    background-color: var(--hero-bg-color);
+    padding: var(--section-padding);
     text-align: center;
-    padding: 50px;
-    background-color: white;
 }
 
-.hero h1 {
-    font-size: 2.5em;
-}
+/* Add more detailed styles for buttons, cards, and other elements */
 
-.hero p {
-    font-size: 1.2em;
-}
-
-.hero input {
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    background-color: var(--wooy-green);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Additional section styles would follow the same pattern, with unique styles for each */
-
-/* Footer styles */
 footer {
-    background-color: var(--wooy-green);
-    color: white;
+    background-color: var(--main-color);
+    color: var(--text-light);
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    padding: var(--section-padding) 20px;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
-    /* Adjust styles for mobile devices */
+    /* Responsive styles */
 }
