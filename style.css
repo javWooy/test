@@ -1,65 +1,49 @@
-/* Importing a Google Font for better typography */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
-:root {
-    --main-color: #00bfa5;
-    --text-dark: #333;
-    --text-light: #fff;
-    --bg-color: #f4f4f4;
-    --hero-bg-color: #e8f7f4;
-    --section-padding: 50px;
-}
-
-* {
-    box-sizing: border-box;
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--bg-color);
-    line-height: 1.6;
-    color: var(--text-dark);
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background: var(--main-color);
-    color: var(--text-light);
-    padding: 1rem 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-nav .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-nav .logo .oy-part {
-    color: var(--text-light);
-}
-
-.hero {
-    background-color: var(--hero-bg-color);
-    padding: var(--section-padding);
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-/* Add more detailed styles for buttons, cards, and other elements */
+#subscription-form input[type=email] {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#subscription-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pods, #benefits {
+    padding: 20px 0;
+}
+
+#pods img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
 
 footer {
-    background-color: var(--main-color);
-    color: var(--text-light);
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: var(--section-padding) 20px;
-}
-
-@media (max-width: 768px) {
-    /* Responsive styles */
+    padding: 10px 0;
 }
